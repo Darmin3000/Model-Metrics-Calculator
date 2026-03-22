@@ -1,3 +1,0 @@
-google-cloud-monitoring
-sqlalchemy
-pg8000
