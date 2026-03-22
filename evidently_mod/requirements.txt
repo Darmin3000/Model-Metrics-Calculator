@@ -1,0 +1,21 @@
+# --- Original Dependencies ---
+fastapi==0.115.0
+uvicorn==0.30.6
+prometheus_client==0.21.0
+evidently==0.4.25
+pyyaml==6.0.2
+google-cloud-bigquery==3.25.0
+google-cloud-storage==2.18.2
+pandas==2.2.2
+fastparquet==2024.5.0
+requests==2.32.3
+
+# --- New: Cloud SQL & Database Support ---
+# Required for the 'Connector()' used in config.py
+cloud-sql-python-connector[pg8000]==1.12.0
+# The SQL toolkit and Object Relational Mapper
+sqlalchemy==2.0.35
+# Python-only PostgreSQL driver (matching your config.py connection string)
+pg8000==1.31.2
+# Optional but recommended for BQ to Pandas/SQL type mapping
+db-dtypes==1.3.0
